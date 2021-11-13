@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.table ul{
+    display: flex;
+    justify-content: center;
+    margin: 0 -15px;
+}
+.table ul > li{
+    flex: 1 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 15px;
+}
+.box{
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 10);
+}
+.header{
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    background-color: #0075ff;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    position: relative;
+}
+.header h2{
+    color: #fff;
+    font-size: 85px;
+    margin: 10px 0;
+    font-family: "Playfair Display", serif;
+}
+.header h6{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.header h3{
+    position: absolute;
+    background-color: crimson;
+    width: 120px;
+    padding: 10px;
+    color: #fff;
+    transform: rotate(45deg);
+    top: 4px;
+    right: -118px;
+    clip-path: polygon(34% 0, 64% 0, 100% 99%, 0 100%);
+}
+.title{
+    width: 100%;
+    background-color: #0075ff;
+    padding: 10px 0;
+    position: relative;
+    margin: 20px 0;
+}
+.title::before{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: -12px;
+    width: 12px;
+    height: calc(100% + 12px);
+    background-color: #0075ff;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+}
+.body{
+    padding: 20px 20px 40px;
+}
+.body ol li{
+    font-size: 18px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 30px;
+    text-align: left;
+}
+.body ol li::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url("./image/check_mark.png");
+    background-position: center;
+    background-size: cover;
+}
+.btn a{
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    background-color: #0075ff;
+    border: 2px solid #000;
+    text-decoration: none;
+    border-radius: 20px;
+    color: #fff;
+    transition: all 0.5;
+}
+.btn a:hover{
+    background-color: #f00;
+}
